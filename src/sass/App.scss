@@ -1,0 +1,55 @@
+@use './abstracts/variables' as *;
+
+@use './components/header';
+@use './components/search';
+@use './components/devcard';
+
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5rem 0;
+
+    @media (max-width: 649px) {
+        padding: 3rem 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 730px;
+        height: 611px;
+        padding: 50px 0;
+        border-radius: 18px;
+        font-family: $font-family;
+
+        @media (max-width: 760px) {
+            width: 600px;
+        }
+
+        @media (max-width: 649px) {
+            width: 365px;
+            margin: 1rem 0 3rem;
+        }
+    }
+
+    &__container-dark {
+        background-color: $gray-light;
+    }
+
+    &__container-light {
+        background-color: $blue-dark;
+    }
+}
+
+.app-dark {
+    background-color: $gray-light;
+}
+
+.app-light {
+    background-color: $blue-dark;
+}

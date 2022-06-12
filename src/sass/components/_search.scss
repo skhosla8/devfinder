@@ -1,0 +1,137 @@
+@use '../abstracts/variables' as *;
+
+.search {
+    background-color: $navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    height: 64px;
+    border-radius: 18px;
+
+    @media (max-width: 760px) {
+        padding: 0.4rem 0;
+    }
+
+    @media (max-width: 649px) {
+        padding: 0.2rem 0;
+    }
+
+    &__field {
+        img {
+            vertical-align: middle;
+            margin: 0 1em 0 2rem;
+
+            @media (max-width: 649px) {
+                width: 20px;
+                height: 20px;
+                margin: 0 0.6rem 0 1rem;
+            }
+        }
+
+        input {
+            height: 48px;
+            width: 300px;
+            font-size: 17px;
+            line-height: $h4-line-height;
+            font-family: $font-family;
+            font-weight: $font-weight-reg;
+            outline: none;
+            border: none;
+            color: $white;
+
+            @media (max-width: 760px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 649px) {
+                width: 200px;
+                font-size: 0.85rem;
+            }
+        }
+    }
+
+    &__field-light {
+        input {
+            background-color: $navy;
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+    }
+
+    &__field-dark {
+        input {
+            background-color: $cream;
+            color: $gray-dark;
+            opacity: 0.9;
+            
+            &::placeholder {
+                color: $gray;
+            }
+        }
+    }
+
+    &__submit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+            color: red;
+            margin-right: 1.3rem;
+            font-size: $font-size-h4;
+        }
+
+        button {
+            background-color: $blue-bright;
+            border: none;
+            border-radius: 10px;
+            padding: 11px 22px;
+            color: $white;
+            font-family: $font-family;
+            font-size: $font-size-h3;
+            margin-right: 0.6rem;
+            cursor: pointer;
+
+            @media (max-width: 760px) {
+                padding: 10px 21px;
+            }
+
+            @media (max-width: 649px) {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+                margin-right: 0.5rem;
+            }
+        }
+
+        &__error {
+            @media (max-width: 649px) {
+                position: absolute;
+                top: 60;
+                right: 30;
+                width: 80px;
+                margin-left: -99px;
+                padding: 0.5rem;
+            }
+        }
+
+        &__error-light {
+            background-color: $navy;
+        }
+
+        &__error-dark {
+            background-color: $cream;
+        }
+    }
+}
+
+.search-light {
+    background-color: $navy;
+}
+
+.search-dark {
+    background-color: $cream;
+    box-shadow: 1px 10px 10px #e2e9ff;
+}
