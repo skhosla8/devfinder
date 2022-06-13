@@ -510,7 +510,7 @@
 @media (max-width: 649px) {
   .app__container {
     width: 365px;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 1rem 0 3rem;
   }
 }
