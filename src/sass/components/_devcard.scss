@@ -139,12 +139,13 @@
             margin: 1.3rem 0;
 
             @media (max-width: 760px) {
-                width: 460px;
+                width: 480px;
                 margin-top: 45px;
                 margin-left: -145px;
             }
 
             @media (max-width: 649px) {
+                width: 280px;
                 font-size: $font-size-h4;
                 margin-left: -104px;
             }
@@ -342,7 +343,6 @@
         }
 
         a,
-        a:active,
         a:visited {
             text-decoration: none;
         }

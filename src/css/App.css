@@ -304,13 +304,14 @@
 }
 @media (max-width: 760px) {
   .devcard .devcard-container__3 {
-    width: 460px;
+    width: 480px;
     margin-top: 45px;
     margin-left: -145px;
   }
 }
 @media (max-width: 649px) {
   .devcard .devcard-container__3 {
+    width: 280px;
     font-size: 13px;
     margin-left: -104px;
   }
@@ -459,7 +460,6 @@
   color: #4B6A9B;
 }
 .devcard .devcard-container a,
-.devcard .devcard-container a:active,
 .devcard .devcard-container a:visited {
   text-decoration: none;
 }
